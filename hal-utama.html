@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Siswa - Aplikasi Pembayaran SPP</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <div class="mt-5 shadow-lg mx-36">
+            <h3 class="font-bold text-lg mb-2">Aplikasi Pembayaran SPP.</h3>
+            <div class="p-3 bg-green-200 rounded-lg">
+                <p class="text-green-600 text-xs">Anda Login Sebagai <span class="font-semibold">ADMINISTRATOR</span> Aplikasi Pembayaran SPP.</p>
+            </div>
+            <div class="flex text-sm">
+                <a href="admin.php" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Administrator</a>
+                <a href="admin.php?url=spp" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">SPP</a>
+                <a href="admin.php?url=kelas" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Kelas</a>
+                <a href="admin.php?url=siswa" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Siswa</a>
+                <a href="admin.php?url=petugas" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Petugas</a>
+                <a href="admin.php?url=pembayaran" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Pembayaran</a>
+                <a href="admin.php?url=laporan" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Laporan</a>
+                <a href="admin.php?=logout" class="bg-green-700 text-white mr-2 mt-3 rounded-md py-1 px-2 hover:bg-green-600 hover:transitio hover:scale-100">Log-out</a>
+            </div>
+
+            <div>
+                <h5 class="text-semibold mb-3 text-xl font-semibold">Halaman Data Siswa</h5>
+                <a href="?url=tambah-spp" class="text-xs bg-green-700 text-white p-2 rounded-sm hover:bg-green-600 transition">Tambah</a>
+            </div>
+
+            <hr class="text-slate-300 mt-6">
+
+            <div class="relative overflow-x-auto">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                NO
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                NISN
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                NIS
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                NAMA
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                ID KELAS
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                ALAMAT
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                NO TELP
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                ID SPP
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                EDIT
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                HAPUS
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 relative">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                1
+                            </th>
+                            <td class="px-6 py-4">
+                                1234
+                            </td>
+                            <td class="px-6 py-4">
+                                4321
+                            </td>
+                            <td class="px-6 py-4">
+                                admin
+                            </td>
+                            <td class="px-6 py-4">
+                                123
+                            </td>
+                            <td class="px-6 py-4">
+                                perum cikunir
+                            </td>
+                            <td class="px-6 py-4">
+                                089
+                            </td>
+                            <td class="px-6 py-4">
+                                111
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="" class="bg-blue-600 text-white p-2 rounded">EDIT</a>
+                            </td>
+                            <td class="px-6 py-4">
+                                <a href="" class="bg-red-600 text-white py-2 rounded">HAPUS</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div
+    </body>
+</html>
